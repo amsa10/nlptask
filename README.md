@@ -35,3 +35,13 @@ Keywords - набор ключевых слов извлеченных из мн
 множеств их ключевых слов. Условно если пересекается на 70% - да, иначе -
 нет.(threshold выбирается вами)
 4. output: tag/label каждого входящего текста
+
+
+Ответ: по ключевым словам матчин и классификация  не самый лудший подход и нет смысла делать 
+
+Cons:
+
+Limited Flexibility: Keyword matching relies heavily on the keywords you choose. If a keyword is missing or if the text contains variations or synonyms that are not covered by your keywords, the classification may be inaccurate.
+Lack of Contextual Understanding: Keyword matching doesn't capture the context or semantic meaning of the text. It simply checks for the presence of specific words or phrases, which may lead to misclassification in cases where context is crucial.
+Scalability: Managing a large number of keywords and tags can become cumbersome and difficult to maintain, especially as the dataset or the number of tags grows. It may require frequent updates and adjustments to the keyword lists.
+Handling Ambiguity: Text classification often deals with ambiguous or nuanced language. Keyword matching alone may struggle to handle such cases where multiple tags could potentially apply based on the same keywords.
